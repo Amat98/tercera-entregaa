@@ -1,0 +1,195 @@
+/*RESPONSIVE DESKTOP*/
+
+/*menu hamburguesa*/
+@media screen and (min-width:1200px){
+
+    header{
+        nav{
+            section{
+                .logo-dos{
+                    
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    
+                }
+            }
+            .bar-btn{
+                display: none;
+            }
+            .nav-menu{
+                position: relative;
+                height: 100px;
+                top: 40px;
+                background: none;
+                transition: none;
+                text-align: right;
+                margin-right: 20px;
+                
+                
+                li{
+                    
+                    a{
+                        font-size: 35px;
+                        transition: 1.6s;
+                    }
+                    display: inline-block;
+                    line-height: 0px;
+                    margin: 0 5px;
+                    transition: .9s;
+                    a:hover{
+                    background-color: $color-principal;
+                    }
+                }
+                
+            }
+            .nav-menu li , .nav-menu li a:hover{
+                color: $color-secundario;
+                transition: .5s;
+            }
+            
+
+            
+            
+        }
+    }
+    /*main index*/
+
+    .body-index{
+        .main-index{
+            display: grid;
+            grid-template-areas:"galeria parrafo"
+                                "botones botones";
+
+            .titulo-index{
+                grid-area: parrafo;
+                margin-top: 100px;
+                margin-right: auto;
+                transition: .7s;
+                
+            }
+
+            .galeria-uno{
+                grid-area: galeria;
+                width: 600px;
+                margin-right: 10px;
+                transition: .7s;
+                               
+            }
+
+            .botones{
+                grid-area: botones;
+                margin-top: 50px;
+                transition: .7s;
+            }
+        }
+    }
+
+    /*main artistas*/
+
+    .body-art{
+        .main-art{
+            margin: 0px 100px;
+            transition: .6s;
+            .contenedor{
+                .cuadro-uno{
+                    animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+                    animation-duration: 2s; /* don't forget to set a duration! */
+                }
+                .cuadro-dos{
+                    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+                    animation-duration: 2s; /* don't forget to set a duration! */
+                }
+            }
+        }
+    }
+
+    /*main canciones*/
+    .body-can{
+        
+        .main-can{
+            
+            margin: 0px auto;
+            
+            .contenedor{
+                .cuadro-uno{
+                    grid-template-areas: "img titulo video"
+                                         "img parrafo video";
+                                         animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+                                         animation-duration: 2s; /* don't forget to set a duration! */     
+                    .img-uno{
+                        display: block;
+                        width: 350px;
+                        grid-area: img;
+                        margin: auto 0px;
+                    }
+                    .youtube-uno{
+                        width: 500px;
+                        grid-area: video;
+                        
+                    }
+                    .titulo-uno{
+                        grid-area: titulo;
+                    }
+                    ul{
+                        grid-area: parrafo;
+                        margin: 0px 50px;
+                        margin-bottom: 30px;
+                        li{
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .cuadro-dos{
+                    grid-template-areas: "video  titulo img"
+                                         "video  parrafo img";
+                                         animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+                                         animation-duration: 2s; /* don't forget to set a duration! */
+                    .img-dos{
+                        display: block;
+                        width: 350px;
+                        grid-area: img;
+                        margin-left: auto;
+                    }
+                    .youtube-dos{
+                        width: 500px;
+                        grid-area: video;
+                        
+                    }
+                    .titulo-dos{
+                        grid-area: titulo;
+                    }
+                    ul{
+                        grid-area: parrafo;
+                        margin: 0px 50px;
+                        margin-bottom: 30px;
+                        li{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*main nosotros*/
+
+    .body-nosotros{
+        .main-nosotros{
+            margin: 0px 100px;
+            
+        }
+    }
+
+    /*main contacto*/
+    .body-contacto{
+        .main-contacto{
+            transition: .7s;
+            margin: 0px 180px;
+        }
+
+        
+    }
+
+}
+

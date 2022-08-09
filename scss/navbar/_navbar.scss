@@ -1,0 +1,81 @@
+@import "../abstracts/variables";
+
+/*MENU DE NAVEGACION*/
+header{
+    grid-area: header;
+    background-color: black;
+    height: 90px;
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+
+        section{
+            .logo-uno{
+                width: 250px;
+                margin-left: 10px;
+                
+                height: 80px;
+                
+            }
+            .logo-dos{
+            display: none;
+            }
+        }
+
+        
+        
+        .bar-btn{
+            color: $color-principal;
+            font-size: 50px;
+            margin-right: 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .nav-menu{
+            position: fixed;
+            width: 100%;
+            height: 0vh;
+            top: 90px;
+            background-color: $transparente-uno;
+            text-align: center;
+            transition: all .5s;
+            z-index: 2;
+            
+            li{
+                display: none;
+                line-height: 40px;
+                margin: 50px 0;
+                transition: all .5s;
+                
+                a{
+                    color: $color-secundario;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        .nav-menu li , .nav-menu li a:hover{
+            color: $color-principal;
+            transition: .5s;
+        }
+
+        #check{
+            display: none;
+        }
+        #check:checked ~ .nav-menu{
+            height: 100vh;
+        }
+        #check:checked ~ .nav-menu li{
+            display: block;
+        }
+    }
+}

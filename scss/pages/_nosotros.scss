@@ -1,0 +1,23 @@
+/*main nosotros*/
+
+.body-nosotros{
+    .main-nosotros{
+        color: $color-secundario;
+        margin: 0px 10px;
+        padding: 0px 5px;
+        background-color: $transparente-uno;
+        section{
+            text-align: center;
+            h1{
+                color: $color-principal;
+                font-size: $letra-uno;
+            }
+            h2{
+                font-size: 35px;
+            }
+            .galeria-uno{
+                display: none;
+            }
+        }
+    }
+}

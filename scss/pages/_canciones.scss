@@ -1,0 +1,119 @@
+@import "../abstracts/maps";
+
+/*main canciones*/
+.body-can{
+    .main-can{
+        transition: .7s;
+        color: map-get($map: $colores-uno, $key:secundario );
+        font-size: 25px;
+        .titulo-can{
+            h1{
+                color: $color-principal;
+                text-align: center;
+                font-size: $titulo;
+                font-family: 'Kalam', cursive;
+                margin-top: 20px;
+            }
+        }
+
+        .contenedor{
+            .cuadro-uno{
+                margin: 30px 15px;
+                background-color: map-get($map: $colores-uno, $key:transparente );
+                .img-uno{
+                    display: none;
+                }
+                .youtube-uno{
+                    width: 400px;
+                    margin: auto;
+                    .video-uno{
+                        height: 0px;
+                        padding-bottom: 56.25%;
+                        position: relative;
+                        iframe{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                .titulo-uno{
+                    color: $color-principal;
+                    font-size: $letra-uno;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                ul{
+                    padding: 0;
+                    margin-bottom: 30px;
+                    li{
+                        font-size: 35px;
+                        transition: .7s;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color: $color-secundario;
+                            
+                               
+                        }
+                        
+                    }
+                    li:hover{
+                        text-shadow: 4px 2px 4px $color-principal;
+                        transform: scale(1.04);
+                    }
+                }
+            }
+
+            .cuadro-dos{
+                margin: 30px 15px;
+                background-color: map-get($map: $colores-uno, $key:transparente );
+                .img-dos{
+                    display: none;
+                }
+                .youtube-dos{
+                    width: 400px;
+                    margin: auto;
+                    .video-dos{
+                        height: 0px;
+                        padding-bottom: 56.25%;
+                        position: relative;
+                        iframe{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                .titulo-dos{
+                    color: $color-principal;
+                    font-size: $letra-uno;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                ul{
+                    li{
+                        font-size: 35px;
+                        transition: .7s;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            color: $color-secundario;
+    
+                            
+                        }
+                        
+                    }
+                    li:hover{
+                        text-shadow: 4px 2px 4px $color-principal;
+                        transform: scale(1.04);
+                    }
+                }
+            }
+        }
+    }
+}

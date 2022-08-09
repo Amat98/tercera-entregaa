@@ -1,0 +1,80 @@
+@import "../abstracts/mixins";
+@import "../abstracts/maps";
+@import "../abstracts/extend";
+
+
+/*MAIN INDEX*/
+
+.body-index{
+    .main-index{
+        margin-top: 40px;
+        color: map-get($map: $colores-uno, $key:secundario );
+        text-align: center;
+        .titulo-index{
+            h1{
+                font-size: 40px;
+                text-shadow: 1px 4px 2px black;
+                P{
+                    margin-bottom: 0px;
+                }
+                margin-bottom: 0px;
+            }
+            h2{
+                font-size: 40px;
+                color: map-get($map: $colores-uno, $key:primario );
+                text-shadow: 1px 4px 3px black;
+                margin-bottom: 0px;
+            }
+        }
+
+        .galeria-uno{
+            width: 350px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px map-get($map: $colores-uno, $key:tercero );
+        }
+
+        .botones{
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            .boton-uno{
+                
+                p{
+                    /*probando extend*/
+                    @extend %botones;
+                    background-color: map-get($map: $colores-uno, $key:primario );
+                    transition: .4s;
+                    a{
+                        color: map-get($map: $colores-uno, $key:secundario );
+                    }
+                }
+                p:hover{
+                    background-color: $transparente-dos;
+                    transition: .4s;
+                }
+            }
+            
+
+            .boton-dos{
+                
+                p{
+                    @extend %botones;
+                    background-color: map-get($map: $colores-uno, $key:tercero );
+                    transition: .4s;
+                    a{
+                        color: map-get($map: $colores-uno, $key:primario );
+                        
+                    }
+                }
+                p:hover{
+                    background-color: $transparente-tres;
+                    transition: .4s;
+                }
+            }
+            
+        }
+
+
+    }
+}

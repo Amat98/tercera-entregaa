@@ -1,0 +1,37 @@
+@import "../abstracts/variables";
+
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    list-style: none;
+}
+
+/*GRID GENERAL*/
+
+body{
+    display: grid;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        background-color: $color-tres;
+        color: $color-secundario;
+        margin-top: auto;
+        font-size: 25px;
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    
+    
+}
+

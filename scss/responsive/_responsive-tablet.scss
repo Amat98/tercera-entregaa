@@ -1,0 +1,169 @@
+/*RESPONSIVE TABLETS*/
+
+
+@media screen and (min-width: 768px){
+    /*menu hamburguesa*/
+    header{
+        nav{
+            section{
+                .logo-uno{
+                    display: none;
+                }
+                .logo-dos{
+                    display: block;
+                    width: 550px;
+                    margin-left: 10px;
+                    margin-top: 0px;
+                }
+            }
+
+            
+        }
+    }
+
+    /*main index*/
+    .body-index{
+        .main-index{
+            
+            .titulo-index{
+                transition: .7s;
+            }
+            .galeria-uno{
+                width: 550px;
+                transition: .7s;
+            }
+
+            .botones{
+                transition: .7s;
+            }
+        }
+    }
+
+    /*main artistas*/
+    .body-art{
+        
+        .main-art{
+            transition: .6s;
+            
+            .contenedor{
+                .cuadro-uno{
+                    transition: 1s;
+                    display: grid;
+                    grid-template-areas: "img-uno titulo-uno"
+                                         "img-uno parrafo-uno";
+                    .img-uno{
+                        grid-area: img-uno;
+                        padding-top: 0px;
+                    }
+                    
+
+                    .titulo-uno{
+                        grid-area: titulo-uno;
+                        margin-top: 20px;
+                        margin-bottom: 0px;
+                        
+                        height: 50px;
+
+                    }
+                    p{
+                        grid-area: parrafo-uno;
+                        margin-top: 0px;
+                        margin-bottom: 60px;
+                    }
+                }
+
+                .cuadro-dos{
+                    display: grid;
+                    grid-template-areas: "titulo-dos img-uno "
+                                         "parrafo-dos img-uno ";
+                    .img-dos{
+                        grid-area: img-uno;
+                        padding-top: 0px;
+                    }
+                    .titulo-dos{
+                        grid-area: titulo-dos;
+                        margin-top: 20px;
+                        margin-bottom: 0px;
+                        height: 50px;
+                    }
+                    p{
+                        grid-area: parrafo-dos;
+                        margin-top: 0px;
+                        margin-bottom: 60px;
+                    }
+                }
+
+
+                
+            }
+        }
+    }
+
+    /*main canciones*/
+    .body-can{
+        
+        .main-can{
+            
+            .contenedor{
+                
+                .cuadro-uno{
+                    display: grid;
+                    grid-template-areas: "video titulo"
+                                        "video parrafo";
+                    .youtube-uno{
+                        grid-area: video;
+                        width: 450px;
+                    }
+                    .titulo-uno{
+                        grid-area: titulo;
+                    }
+                    ul{
+                        grid-area: parrafo;
+                        margin-left: 10px;
+                        li{
+                            text-align: left;
+                        }
+                        
+                    }
+                }
+
+                .cuadro-dos{
+                    display: grid;
+                    grid-template-areas: "titulo video"
+                                        "parrafo video";
+                    .youtube-dos{
+                        grid-area: video;
+                        width: 450px;
+                    }
+                    .titulo-dos{
+                        grid-area: titulo;
+                    }
+                    ul{
+                        grid-area: parrafo;
+                        padding-left: 10px;
+                        
+                        li{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*main nosotros*/
+    .body-nosotros{
+        .main-nosotros{
+            section{
+                .galeria-uno{
+                    display: block;
+                    width: 400px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+
+

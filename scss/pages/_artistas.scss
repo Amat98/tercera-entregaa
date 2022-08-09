@@ -1,0 +1,69 @@
+@import "../abstracts/maps";
+
+/*MAIN ARTISTAS*/
+
+.body-art{
+    .main-art{
+        
+        color: map-get($map: $colores-uno, $key:secundario );
+        font-size: 25px;
+        .titulo-art{
+            
+            h1{
+                color: $color-principal;
+                text-align: center;
+                font-size: $titulo;
+                font-family: 'Kalam', cursive;
+                margin-top: 10px;
+            }
+            
+        }
+
+        .contenedor{
+            .cuadro-uno{
+                display: grid;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 30px;
+                background-color: map-get($map: $colores-uno, $key:transparente );
+                .img-uno{
+                    @include cuadrado-uno;
+                }
+                .titulo-uno{
+                    color: $color-principal;
+                    font-size: $letra-uno;
+                    text-align: center;
+                    margin-top: 10px;
+                    
+                }
+                p{
+                    padding: 0px 10px;
+                    font-size: $letra-dos;
+                }
+            }
+
+            .cuadro-dos{
+                display: grid;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 30px;
+                background-color: map-get($map: $colores-uno, $key:transparente );
+                .img-dos{
+                    @include cuadrado-dos;
+                }
+                .titulo-dos{
+                    color: $color-principal;
+                    font-size: $letra-uno;
+                    text-align: center;
+                    margin-top: 10px;
+                    
+                }
+                p{
+                    padding: 0px 10px;
+                    font-size: $letra-dos;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,35 @@
+//BOTONES INDEX
+
+@mixin boton-1 {
+    background-color: $color-principal;
+    width: 130px;
+    margin-right: 10px;
+    color: $color-secundario;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+@mixin boton-2 {
+    background-color: black;
+    width: 130px;
+    margin-right: 10px;
+    color: $color-principal;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+
+//ITEMS DE ARTISTAS.HTML
+@mixin cuadrado-uno{
+    width: 300px;
+    margin: auto;
+    padding-top: 15px;
+    
+}
+
+@mixin cuadrado-dos{
+    width: 300px;
+    margin: auto;
+    padding-top: 15px;
+    
+}
