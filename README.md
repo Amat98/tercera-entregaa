@@ -1,5 +1,7 @@
 # tercera-entrega
 
+link del servidor netlify "https://nacidos-de-un-altavoz.netlify.app/"
+
 puse etiquetas metas de description y keywords a todos los html
 
 en index meti "extend" para los botones y puse sus colores con un map-get
